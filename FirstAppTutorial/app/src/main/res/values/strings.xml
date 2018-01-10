@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SugarApp</string>
+    <string name="zaloguj">Zaloguj</string>
+    <string name="sugar">Sugar</string>
+    <string name="login">Login:</string>
+    <string name="nazwa_uzytkownika">Nazwa uzytkownika</string>
+    <string name="podaj_nazwe_uzytkownika">Podaj nazwę użytkownika</string>
+    <string name="podaj_haslo">Podaj hasło</string>
+    <string name="email">Email</string>
+    <string name="podaj_email">Podaj email</string>
+    <string name="typ_uzytkownika">Typ użytkownika</string>
+    <string name="zarejestruj">Zarejestruj</string>
+    <string name="opiekun">opiekun</string>
+    <string name="pacjent">pacjent</string>
+    <string name="lekarz">lekarz</string>
+    <string name="kliknij_by_sie_zalogowac">Kliknij by się zalogować</string>
+    <string name="haslo">Hasło</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="zarejestruj_sie_za_darmo">Nie masz jeszcze konta? Zarejestruj sie za darmo</string>
+</resources>
