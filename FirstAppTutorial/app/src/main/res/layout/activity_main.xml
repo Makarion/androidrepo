@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:background="@drawable/running_background"
+
+    tools:context="com.example.makarion.firstapptutorial.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nazwa_uzytkownika" />
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:hint="@string/podaj_nazwe_uzytkownika"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/haslo" />
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:hint="@string/podaj_haslo"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email" />
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:hint="@string/podaj_email"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/typ_uzytkownika" />
+
+<!--
+        <EditText
+            android:id="@+id/editTextUserType"
+            android:hint="Podaj typ użytkownika"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+            -->
+
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:id="@+id/radioGroup"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/radio_doctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lekarz"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_patient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pacjent"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton android:id="@+id/radio_attendant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/opiekun"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:text="@string/zarejestruj"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textAlignment="center"
+            android:id="@+id/textViewLogin"
+            android:text="@string/kliknij_by_sie_zalogowac"
+            android:textColor="#000000"
+            android:layout_below="@id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+</RelativeLayout>
