@@ -8,11 +8,12 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/running_background"
     tools:context="com.example.makarion.firstapptutorial.MainActivity">
 
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/loginLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
@@ -21,25 +22,25 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Username" />
+            android:text="@string/username" />
 
         <EditText
             android:id="@+id/editTextUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter username" />
+            android:hint="@string/enter_username" />
 
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="password" />
+            android:text="@string/password" />
 
         <EditText
             android:id="@+id/editTextPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter password"
+            android:hint="@string/enter_password"
             android:inputType="textPassword" />
 
 
@@ -47,9 +48,17 @@
             android:id="@+id/buttonLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login" />
-
-
+            android:text="@string/login_button" />
     </LinearLayout>
+
+    <TextView
+        android:layout_below="@id/loginLayout"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textAlignment="center"
+        android:id="@+id/textViewRegister"
+        android:text="@string/nie_masz_jeszcze_konta_zarejestruj_sie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
 
 </RelativeLayout>

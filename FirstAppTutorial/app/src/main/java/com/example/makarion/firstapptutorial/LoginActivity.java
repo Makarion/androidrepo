@@ -15,6 +15,13 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.example.makarion.firstapptutorial.MainActivity;
+import com.example.makarion.firstapptutorial.ProfileActivity;
+import com.example.makarion.firstapptutorial.R;
+import com.example.makarion.firstapptutorial.model.Constants;
+import com.example.makarion.firstapptutorial.model.GuestProfileActivity;
+import com.example.makarion.firstapptutorial.model.RequestHandler;
+import com.example.makarion.firstapptutorial.model.SharedPrefManager;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -27,28 +34,30 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private Button buttonLogin;
     private ProgressDialog progressDialog;
 
-    //private TextView textViewRegister;
+    private TextView textViewRegister;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-/*
+
         if(SharedPrefManager.getInstance(this).isLoggedIn()){
             finish();
             startActivity(new Intent(this, ProfileActivity.class));
             return;
         }
-*/
+
+
         editTextUsername = (EditText) findViewById(R.id.editTextUsername);
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
         buttonLogin = (Button) findViewById(R.id.buttonLogin);
+        textViewRegister = (TextView) findViewById(R.id.textViewRegister);
 
         progressDialog = new ProgressDialog(this);
-        progressDialog.setMessage("Please wait...");
+        progressDialog.setMessage("Proszę czekać");
 
         buttonLogin.setOnClickListener(this);
-      //  textViewRegister.setOnClickListener(this);
+        textViewRegister.setOnClickListener(this);
 
     }
 
@@ -67,15 +76,18 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                         progressDialog.dismiss();
                         try {
                             JSONObject obj = new JSONObject(response);
+                            String type = obj.getString("usertype").toString();
                             if(!obj.getBoolean("error")){
                                 SharedPrefManager.getInstance(getApplicationContext())
                                         .userLogin(
                                                 obj.getInt("id"),
                                                 obj.getString("username"),
-                                                obj.getString("email")
-                                             //   obj.getString("usertype")
+                                                obj.getString("email"),
+                                                obj.getString("usertype")
                                         );
-                                Toast.makeText(getApplicationContext(),"Uzytkownik zalogowanyy", Toast.LENGTH_LONG).show();
+                                //Toast.makeText(getApplicationContext(),type, Toast.LENGTH_LONG).show();
+                                if(type.equals("pacjent")) startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
+                                else startActivity(new Intent(getApplicationContext(), GuestProfileActivity.class));
                             }else{
                                 Toast.makeText(
                                         getApplicationContext(),
@@ -119,10 +131,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         if(view == buttonLogin){
             userLogin();
         }
-        /*
+
         if(view == textViewRegister) {
             startActivity(new Intent(this, MainActivity.class));
         }
-        */
+
     }
 }
