@@ -27,7 +27,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".ProfileActivity" />
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".AddRecordActivity" />
+        <activity android:name=".model.GuestProfileActivity" />
+        <activity android:name=".ShowRecordsActivity" />
+        <activity android:name=".GetRecordsActivity"></activity>
     </application>
 
 </manifest>

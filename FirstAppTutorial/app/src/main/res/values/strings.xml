@@ -17,4 +17,17 @@
     <string name="haslo">Hasło</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="zarejestruj_sie_za_darmo">Nie masz jeszcze konta? Zarejestruj sie za darmo</string>
+    <string name="username">Username</string>
+    <string name="enter_username">Enter username</string>
+    <string name="password">password</string>
+    <string name="enter_password">Enter password</string>
+    <string name="nie_masz_jeszcze_konta_zarejestruj_sie">Nie masz jeszcze konta? Zarejestruj sie</string>
+    <string name="login_button">Login</string>
+    <string name="user_type">USER TYPE</string>
+    <string name="user_name">USER NAME</string>
+    <string name="user_email">USER EMAIL</string>
+    <string name="kalorie">Kalorie</string>
+    <string name="weglowodany">Węglowodany</string>
+    <string name="insulina">Insulina</string>
+    <string name="data">Data</string>
 </resources>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_show_records"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/running_background"
+    tools:context="com.example.makarion.firstapptutorial.ShowRecordsActivity">
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="match_parent"
+            android:text="@string/kalorie" />
+
+        <TextView
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:text="@string/weglowodany" />
+
+        <TextView
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:text="@string/insulina" />
+
+        <TextView
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="@string/data"
+            android:textAlignment="center" />
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewCalories"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewCarbohydrates"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewInsulin"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewDate"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewCalories1"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewCarbohydrates1"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewInsulin1"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewDate1"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewCalories2"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewCarbohydrates2"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewInsulin2"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewDate2"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewCalories3"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewCarbohydrates3"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewInsulin3"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewDate3"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewCalories4"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewCarbohydrates4"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewInsulin4"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewDate4"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewCalories5"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewCarbohydrates5"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewInsulin5"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewDate5"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewCalories6"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewCarbohydrates6"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewInsulin6"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewDate6"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewCalories7"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewCarbohydrates7"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewInsulin7"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewDate7"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewCalories8"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewCarbohydrates8"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewInsulin8"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewDate8"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewCalories9"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewCarbohydrates9"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewInsulin9"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewDate9"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    </TableLayout>

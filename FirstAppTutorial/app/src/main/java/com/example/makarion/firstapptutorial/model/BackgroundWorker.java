@@ -1,4 +1,4 @@
-package com.example.makarion.firstapptutorial;
+package com.example.makarion.firstapptutorial.model;
 
 import android.app.AlertDialog;
 import android.content.Context;
